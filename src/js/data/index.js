@@ -1,8 +1,9 @@
 import colors from './colors'
 import fullColor from './fullColor'
 
-function getpassAccuracy(data, winner) {
+function getPassAccuracy(data, winner) {
     const statistics = data[`${winner}_statistics`]
+    
     return {
         passAccuracy: statistics.pass_accuracy,
         numPasses: statistics.num_passes
@@ -111,7 +112,7 @@ function filterData(data) {
     }
 
     return {
-        passAcurrancy: getpassAccuracy(data, getDataFrom),
+        passAcurrancy: getPassAccuracy(data, getDataFrom),
         ballPossession: getBallPossession(data, getDataFrom),
         distanceCovered: getDistance(data, getDataFrom),
         infos: getInfos(data, getDataFrom),
@@ -136,5 +137,5 @@ function _parseTime(time) {
 module.exports = {
     filterData,
     getBallPossession,
-    getpassAccuracy
+    getPassAccuracy
 }

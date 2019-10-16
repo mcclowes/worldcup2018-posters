@@ -1,18 +1,17 @@
-import { calculateWidth, getUrlParams, getMatchCode, returnRGBA } from './utils'
-import FileSaver from 'file-saver'
 import allMatches from './data/matches.json'
-import { filterData } from './data/index'
-import Stripes from './shapes/Stripes'
-import PercentBar from './shapes/PercentBar'
-import Noise from './shapes/Noise'
-import SmoothCurve from './shapes/SmoothCurve'
 import ConicalGradient from './shapes/ConicalGradient'
-import Triangle from './shapes/Triangle'
-import OverlayShape from './shapes/OverlayShape'
 import Cross from './shapes/Cross'
-import Text from './shapes/Text'
-
+import FileSaver from 'file-saver'
 import FontFaceObserver from 'fontfaceobserver'
+import Noise from './shapes/Noise'
+import OverlayShape from './shapes/OverlayShape'
+import PercentBar from './shapes/PercentBar'
+import SmoothCurve from './shapes/SmoothCurve'
+import Stripes from './shapes/Stripes'
+import Text from './shapes/Text'
+import Triangle from './shapes/Triangle'
+import { calculateWidth, getUrlParams, getMatchCode, returnRGBA } from './utils'
+import { filterData } from './data/index'
 
 // DOM Style
 const canvas = document.querySelector('canvas')

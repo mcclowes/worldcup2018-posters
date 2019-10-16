@@ -29,3 +29,7 @@ Your canvas should open up automatically at http://localhost:3000.
 
 - World cup API: http://worldcup.sfg.io/
 - Canvas Bolierplate: https://github.com/christopher4lis/canvas-boilerplate
+
+## Notes
+
+2015 Rugby data - https://github.com/j0k3r/rugby-worldcup-slack-bot/blob/master/rugbyWorldCupNotifier.php

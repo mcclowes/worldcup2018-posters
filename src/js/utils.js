@@ -27,18 +27,20 @@ function getMatchCode(path) {
 
 //Params
 function getUrlParams(url) {
-    // http://stackoverflow.com/a/23946023/2407309
     if (typeof url == 'undefined') {
         url = window.location.search
     }
+
     var url = url.split('#')[0] // Discard fragment identifier.
     var urlParams = {}
     var queryString = url.split('?')[1]
+
     if (!queryString) {
         if (url.search('=') !== false) {
             queryString = url
         }
     }
+
     if (queryString) {
         var keyValuePairs = queryString.split('&')
         for (var i = 0; i < keyValuePairs.length; i++) {
@@ -50,6 +52,7 @@ function getUrlParams(url) {
             )
         }
     }
+    
     return urlParams
 }
 
